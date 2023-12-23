@@ -1,0 +1,28 @@
+{% extends './base.html' %}
+{% block title %}
+<title>{{page}}</title>        
+{% endblock %}
+{% block content %}
+<div class="bg-gray">
+    <section id="links" class="container full-vh d-flex-col-center">
+        <h2 class="title-section">Links</h2>
+        <div class="micro-cards link-cards d-flex gap">
+            <a class="micro-card link-card d-flex-col-center hover" href="https://github.com/omchaudhari1107"
+                target="_blank">
+                <span class="iconify" data-icon="mdi:github" data-width="40" data-height="40"></span>
+                <span>GitHub</span>
+            </a>
+            <a class="micro-card link-card d-flex-col-center hover"
+                href="https://www.linkedin.com/in/om-chaudhari-38960721b/" target="_blank">
+                <span class="iconify" data-icon="mdi:linkedin" data-width="40" data-height="40"></span>
+                <span>LinkedIn</span>
+            </a>
+            <a class="micro-card link-card d-flex-col-center hover"
+                href="https://drive.google.com/file/d/1h7tKCBFJHDt4I0BF67ze0ndpmSGnIM0s/view?usp=sharing"
+                target="_blank">
+                <span id="cv">CV📑</span>
+            </a>
+        </div>
+    </section>
+</div>
+{% endblock %}

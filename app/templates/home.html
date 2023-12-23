@@ -1,0 +1,26 @@
+{% extends './base.html' %}
+{% block title %}
+<title>{{page}}</title>        
+{% endblock %}
+{% block content %}
+
+<div class="bg-gray">
+<section id="home" class="container full-vh d-flex-col-center">
+    <div class="presentation">
+        <span class="hi">Hello there!👋</span>
+        <h1 id="iam">Om Chaudhari</h1>
+        <span id="iama">-I am a</span>&nbsp;&nbsp;<span class="multiple-filed iam-job"></span>
+    </div>
+    <div class="presentation1">
+        {% load static %}
+        <img class="avatar" src="{% static 'images/Untitled design.webp' %}" alt="Img.." loading="lazy">
+    </div>
+
+    <span class="iconify arrow-icon" data-icon="material-symbols:arrow-forward-ios-rounded" data-width="40"
+        data-height="40" data-rotate="90deg"></span>
+</section>
+</div>
+<footer class="d-flex-col-center footer">
+        <span>Build with <span class="heart-icon">💗</span> by Om Chaudhari</span>
+    </footer>
+{% endblock %}

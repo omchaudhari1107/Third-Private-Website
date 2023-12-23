@@ -1,0 +1,73 @@
+{% extends './base.html' %}
+{% load static %}
+{% block title %}
+<title>{{page}}</title>        
+{% endblock %}
+{% block content %}
+<div class="bg-gray">
+    <section id="projects" class="container full-vh d-flex-col-center">
+        <h2 class="title-section">Projects</h2>
+        <div class="cards project-cards d-flex">
+            <div class="card project-card">
+                <img class="card-thumbnail" src="{% static 'images/img1.jpg' %}" alt="Img not found" loading="lazy">
+                <section class="card-body d-flex-col">
+                    <h3 class="card-title">Vocab Generator</h3>
+                    <p class="card-desc">Get an random Vocab at give time. &nbsp;</p>
+                    <div class="card-footer d-flex space-between">
+                        <span class="card-tag">open-source</span>
+                        <a class="project-link d-flex" href="https://github.com/omchaudhari1107/Daily-Vocab-Generator"
+                            target="_blank">Source
+                            <span class="iconify" data-icon="uil:external-link-alt" data-width="24"
+                                data-height="24"></span></a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card project-card">
+                <img class="card-thumbnail" src="{% static 'images/img2.jpg' %}" alt="Img not found" loading="lazy">
+                <section class="card-body d-flex-col">
+                    <h3 class="card-title">Hand Gesture Detector</h3>
+                    <p class="card-desc">Detect the character by hand gesture recognition.</p>
+                    <div class="card-footer d-flex space-between">
+                        <span class="card-tag">open-source</span>
+                        <a class="project-link d-flex" href="https://github.com/omchaudhari1107/Hand-Gesture-Recog"
+                            target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
+                                data-width="24" data-height="24"></span></a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card project-card">
+                <img class="card-thumbnail" src="{% static 'images/img3.jpg' %}" alt="Img not found" loading="lazy">
+                <section class="card-body d-flex-col">
+                    <h3 class="card-title">Portfolio Django</h3>
+                    <p class="card-desc">Its my first ever webapp on Django &nbsp;</p>&nbsp;
+                    <div class="card-footer d-flex space-between">
+                        <span class="card-tag">open-source</span>
+                        <a href="https://om.up.railway.app/" class="live" target="_blank">Live<span
+                                class="blink">🔴</span></a>
+                        <a class="project-link d-flex" href="https://github.com/omchaudhari1107/Portfolio"
+                            target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
+                                data-width="24" data-height="24"></span></a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card project-card">
+                <img class="card-thumbnail" src="{% static 'images/img4.jpg' %}" alt="Img not found" loading="lazy">
+                <section class="card-body d-flex-col">
+                    <h3 class="card-title">DOCX TO PDF</h3>
+                    <p class="card-desc">Its an webapp which convert bunch of DOCX's to PDF's</p>
+                    <div class="card-footer d-flex space-between">
+                        <span class="card-tag">open-source</span>
+                        <a class="project-link d-flex" href="https://github.com/omchaudhari1107/doc_to_pdf"
+                            target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
+                                data-width="24" data-height="24"></span></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </section>
+</div>
+{% endblock %}
